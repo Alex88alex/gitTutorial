@@ -5,7 +5,9 @@ import Dropdown from './Dropdown';
 import Headers from './Headers';
 import Registationform from './Registrationform';
 
- 
+//import withStyles from './button';
+
+
 
 const menu = [
   {
@@ -22,6 +24,28 @@ const menu = [
   }
 ];
 
+const num1 = [1,2,3,4];
+const num2 = [5,6,7,8];
+//const res = [num1,num2];
+//Array.prototype.push.apply(num1,num2);
+console.log([...num1,...num2]);
+const A ={
+  a:"default",
+  b:"just_test"
+};
+const B ={
+  a:"value_from_b"
+};
+let c ={
+  ...A,
+  ...B
+};
+console.log(c);
+
+const arr = [1,2,3];
+function sum
+
+
 
 class App extends Component {
   render() {
@@ -29,7 +53,6 @@ class App extends Component {
       <div className="App">
         <div>
        <Headers items={menu}/>
-
         <Registationform/>
         <Dropdown />
         </div>
